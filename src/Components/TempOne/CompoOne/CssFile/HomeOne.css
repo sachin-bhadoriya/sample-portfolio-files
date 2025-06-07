@@ -1,0 +1,101 @@
+.homeMainContainer {
+  background: linear-gradient(110deg, rgb(0, 0, 0) 55%, rgb(223, 223, 223) 42%);
+}
+.homeMainContainer .row {
+  align-items: center;
+  margin-left: 10px;
+  color: white;
+}
+.homeHeadTextContainer .cvDownloadBtn{
+  padding: 10px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: 1.5px solid white;
+  background-color: transparent;
+  color: white;
+  margin: 4% 3% 0 0%;
+  transition: all 0.5s ;
+}
+.homeHeadTextContainer .hireMeBtn{
+  padding: 10px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: 1.5px solid #9773F9;
+  background-color: #9773F9;
+  color: white;
+  margin: 4% 3% 0 0%;
+  transition: all 0.5s ;
+}
+.homeHeadTextContainer .cvDownloadBtn:hover{
+  border: 1.5px solid #9773F9;
+  background-color: #9773F9;
+  transform: translateY(-3px);
+  color: white;
+}
+.homeHeadTextContainer .hireMeBtn:hover{
+  border: 1.5px solid #ffffff;
+  background-color: transparent;
+  transform: translateY(-3px);
+  color: white;
+}
+.homeHeadImageContainer{
+  display: flex;
+  justify-content: center;
+}
+.homeOneImage {
+  width: 90%;
+}
+.homeHeadTextContainer {
+  line-height: 1;
+}
+.homeHeadText {
+}
+.homeOneSubhead {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.homeOneMainhead {
+  margin-bottom: 0;
+  font-size: 5.5rem;
+  overflow: visible;
+}
+.homeOneMainhead span{
+  color: #9773F9;
+
+}
+.homeOneParahead {
+  margin-bottom: 0;
+  font-weight: 1.5rem;
+}
+/* slider effect */
+.marquee {
+  width: 95%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 60s linear infinite;
+}
+
+.track img {
+  height: 50px;
+  margin-right: 35px;
+  transition: transform 0.5s ;
+  cursor: pointer;
+}
+.track img:hover {
+    transform: translateY(3px);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
