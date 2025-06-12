@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./Home";
 import MainWebTwo from "./Components/TempTwo/MainWebTwo";
-import mainWebOne from "./Components/TempTwo/mainWebOne";
+import mainWebOne from "./Components/TempOne/mainWebOne";
 import { Routes, Route, Navigate } from "react-router-dom";
 import HomeTwo from "./Components/TempTwo/CompoTwo/HomeTwo";
 import AboutTwo from "./Components/TempTwo/CompoTwo/AboutTwo";
@@ -19,7 +19,7 @@ const App = () => {
       {/* <Home /> */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/First/*" element={<mainwebOne />} />
+        <Route path="/First/*" element={<mainWebOne />} />
         <Route path="/Second/*" element={<MainWebTwo />} />
         {/* <Route path="*" element={<Navigate to="/Second/" />} />
         <Route path="*" element={<Navigate to="/First/" />} /> */}
