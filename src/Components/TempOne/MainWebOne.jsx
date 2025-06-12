@@ -4,7 +4,7 @@ import AboutOne from './CompoOne/AboutOne'
 import ContactOne from './CompoOne/ContactOne'
 import ProjectOne from './CompoOne/ProjectOne'
 
-const Mainwebone = () => {
+const mainWebOne = () => {
   return (
     <>
       <NavbarOne />
@@ -16,4 +16,4 @@ const Mainwebone = () => {
   )
 }
 
-export default Mainwebone
+export default mainWebOne
