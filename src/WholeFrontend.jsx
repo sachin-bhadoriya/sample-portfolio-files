@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import MainWebOne from "./Components/TempOne/mainWebOne";
+import MainWebOne from "./Components/TempOne/Mainwebone";
 import MainWebTwo from "./Components/TempTwo/MainWebTwo";
 import "./WholeFrontend.css";
 import vid from "../src/assets/Video/vid.mp4";
