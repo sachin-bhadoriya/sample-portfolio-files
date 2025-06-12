@@ -6,7 +6,7 @@ const HomeOne = () => {
     <>
       <div className="container-fluid homeMainContainer">
         <div className="row ">
-          <div className="col-md-6 order-2 homeHeadTextContainer">
+          <div className="col-md-6 homeHeadTextContainer">
             <p className="homeOneSubhead homeHeadText merienda">Hi, I am</p>
             <p className="homeOneMainhead homeHeadText dmSerifDisplay">
               <span>Lorem</span> Ipsum
@@ -17,7 +17,7 @@ const HomeOne = () => {
             <button className="cvDownloadBtn">Download CV</button>
             <button className="hireMeBtn">Hire Me</button>
           </div>
-          <div className="col-md-6 order-1 homeHeadImageContainer">
+          <div className="col-md-6 homeHeadImageContainer">
             <img className="homeOneImage" src={dev} alt="Dev" />
           </div>
         </div>

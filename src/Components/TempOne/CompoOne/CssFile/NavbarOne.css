@@ -38,3 +38,81 @@
   color: white;
   border: 1.5px solid white;
 }
+.linksMenu{
+  display: none;
+}
+.linksMenu img{
+  width: 40px;
+    filter: brightness(0) saturate(100%) invert(110%) sepia(81%) hue-rotate(320deg) saturate(600%) brightness(120%);
+
+}
+
+
+/* Show mobile dropdown menu */
+@media screen and (max-width: 608px) {
+  .links {
+    display: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 65px;
+    left: 0;
+    padding: 10px 0;
+    z-index: 999;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .links.mobileMenuOpen {
+    display: flex;
+  }
+
+  .mobileMenuItems {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* .contactPage {
+    display: none;
+  } */
+
+  .linksMenu {
+    /* display: block; */
+    z-index: 9999;
+  }
+}
+
+.mobileDrawer {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  transition: left 0.4s ease;
+  z-index: 99999 !important;
+  padding-top: 60px;
+}
+
+.mobileDrawer.open {
+  left: 0;
+}
+
+.mobileDrawerItems {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+}
+/* Show desktop nav only on larger screens */
+.desktopLinks {
+  display: flex;
+  gap: 30px;
+}
+
+/* Hide on mobile */
+@media screen and (max-width: 768px) {
+  .desktopLinks {
+    display: none;
+  }
+}

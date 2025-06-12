@@ -6,7 +6,7 @@ const AboutOne = () => {
       <div className="container text-center aboutMainContainer">
         <p className="my-4 aboutHeadingName dmSerifDisplay">ABOUT</p>
         <div className="aboutTopContent">
-          <div className="aboutParaContainer m-auto">
+          <div className="p-5 m-auto">
             <p className="m-auto raleway">
               I'm a passionate MERN Stack Developer with expertise in building
               full-fledged, scalable, and user-centric web applications using

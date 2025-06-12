@@ -8,10 +8,10 @@ const MainWebOne = () => {
   return (
     <>
       <NavbarOne />
-      <div id="home"><HomeOne /></div>
-      <div id="about"><AboutOne /></div>
-      <div id="projects"><ProjectOne /></div>
-      <div id="contact"><ContactOne /></div>
+      <HomeOne />
+      <AboutOne />
+      <ProjectOne />
+      <ContactOne />
     </>
   )
 }

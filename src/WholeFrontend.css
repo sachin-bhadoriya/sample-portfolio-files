@@ -1,0 +1,71 @@
+.wholefrontend{
+    background-color: aquamarine;
+    width: 100%;
+    height: 100vh;
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-card:hover {
+  transform: scale(1.03);
+}
+
+.portfolio-card video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  text-align: center;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay h5 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.portfolio-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.portfolio-link:hover {
+  text-decoration: underline;
+}
+
+/* Infinite float animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}

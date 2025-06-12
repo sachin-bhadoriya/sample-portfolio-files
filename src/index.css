@@ -5,10 +5,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #F7F7F7; */
   /* overflow: hidden; */
 }
 
+body, html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
 /* normal css classes */
 .displayFlex{
   display: flex;

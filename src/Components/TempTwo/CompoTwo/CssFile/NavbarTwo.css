@@ -1,0 +1,133 @@
+.navTwoContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+    color: #ffffff;
+  align-items: center;
+}
+.navTwoContainer ul li {
+  list-style: none;
+  cursor: pointer;
+  position: relative; 
+  padding-bottom: 4px; 
+}
+.navTwoContainer ul li a {
+  text-decoration: none;
+    color: #ffffff;
+}
+.navTwoContainer ul li:hover {
+}
+
+.navTwoContainer ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  border-radius: 50%;
+  width: 100%;
+  background-color: #F8F8FF;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.navTwoContainer ul li:hover::after {
+  transform: scaleX(1);
+  /* background-color: #973b59; */
+}
+
+.navTwoContainer ul{
+    display: flex;
+    margin: auto 0; 
+    gap: 40px;
+  }
+  .linksMain{
+  display: flex;
+  align-items: center;
+
+}
+.navTwoContainer .CvBtn button{
+    padding: 5px 10px;
+    border-radius: 3px;
+    outline: none;
+    background-color: #973b59;
+    border: 1px solid #973b59;
+    color: white;
+    transition: all 0.5s ;
+  }
+  .navTwoContainer .CvBtn button:hover{
+    transform: scale(0.95);
+    background-color: #F8F8FF;
+    border: 1px solid #F8F8FF;
+    color: #000000;
+    box-shadow: 0 0 20px #ffffff;
+}
+.logo{
+  transform: scale(1.3);
+  display: flex;
+  align-items: center;
+}
+.linksMenu{
+  display: none;
+}
+
+.linksMenu img{
+  width: 40px;
+    filter: brightness(0) saturate(100%) invert(110%) sepia(81%) hue-rotate(320deg) saturate(600%) brightness(120%);
+
+}
+
+@media screen and (max-width: 768px) {
+  .navTwoContainer {
+    padding: 10px 20px;
+  }
+  .navTwoContainer ul{
+    display: none;
+  }  
+  .links{
+    display: none;
+  }
+.linksMenu{
+  display: block;
+}
+}
+
+/* Mobile Drawer Styles */
+.mobileDrawerTwo {
+  position: fixed;
+  top: 0;
+  left: -270px;
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(20, 20, 20, 0.97);
+  transition: left 0.4s ease-in-out;
+  padding-top: 70px;
+  z-index: 9999;
+}
+.mobileDrawerTwo.open {
+  left: 0;
+}
+.mobileDrawerTwo ul {
+  list-style: none;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.mobileDrawerTwo ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Responsive: Hide desktop menu and show mobile icon */
+@media screen and (max-width: 768px) {
+  .desktopOnly {
+    /* display: none; */
+  }
+  .linksMenu {
+    display: block;
+    z-index: 10000;
+  }
+}

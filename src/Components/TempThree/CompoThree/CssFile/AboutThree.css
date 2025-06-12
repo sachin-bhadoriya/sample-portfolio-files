@@ -46,18 +46,3 @@
 .exploreText:hover {
   padding: 0.5rem 1.5rem;
 }
-.aboutParaContainer{
-  padding: 3rem;
-}
-@media screen and (max-width: 768px) {
-  .aboutMainContainer {
-  margin-top: 50px;
-}
-.aboutParaContainer{
-  padding: 1rem !important;
-}
-.exploreTextContainer {
-  margin: 40px 0 60px 0;
-  cursor: pointer;
-}
-}
