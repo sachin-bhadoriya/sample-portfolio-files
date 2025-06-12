@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import MainWebOne from "./Components/TempOne/mainWebOne";
 import MainWebTwo from "./Components/TempTwo/MainWebTwo";
 import "./WholeFrontend.css";
-import vid from "../src/assets/Video/vid.mp4"
+import vid from "../src/assets/Video/vid.mp4";
 
 const WholeFrontend = () => {
   const portfolioData = [
@@ -20,7 +20,7 @@ const WholeFrontend = () => {
     {
       name: "Portfolio Three",
       videoSrc: vid,
-      route: "/Third",
+      link: "https://sachin-bhadoriya.vercel.app",
     },
   ];
 
@@ -41,9 +41,20 @@ const WholeFrontend = () => {
                 />
                 <div className="portfolio-overlay">
                   <h5>{item.name}</h5>
-                  <Link to={item.route} className="portfolio-link">
-                    View Details →
-                  </Link>
+                  {item.route ? (
+                    <Link to={item.route} className="portfolio-link">
+                      View Details →
+                    </Link>
+                  ) : (
+                    <a
+                      href={item.link}
+                      className="portfolio-link"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Visit Website →
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
